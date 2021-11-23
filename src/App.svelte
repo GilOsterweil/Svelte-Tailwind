@@ -1,22 +1,22 @@
 <script>
-  export let name;
+  import PlayerDetails from "./PlayerDetails.svelte";
+  import Notes from "./Notes.svelte";
 </script>
 
-<main class="text-center p-4 max-w-xs mx-auto sm:max-w-none">
-  <h1 class="text-red-500 text-6xl uppercase leading-loose font-thin">
-    Hello {name}!
-  </h1>
-  <p class="text-gray-700">
-    Visit the
-    <a class="text-blue-600 hover:underline" href="https://svelte.dev/tutorial">
-      Svelte tutorial
-    </a>
-    to learn how to build Svelte apps.
-  </p>
-</main>
+<div class="text-gray-700 flex bg-gray-500"><!-- content wrapper -->
+  <div class="w-auto">
+    <PlayerDetails />    
+    <Notes/>
+  </div>
+  <div class="playbook w-2/3 bg-gray-400">MAIN</div>
+  <div class="w-1/3 bg-gray-600">
+    <div class="skills">HEADER</div>
+    <div class="items"></div>
+  </div>
+</div>
 
 <style lang="postcss" global>
   @tailwind base;
   @tailwind components;
-  @tailwind utilities;
+  @tailwind utilities;  
 </style>
