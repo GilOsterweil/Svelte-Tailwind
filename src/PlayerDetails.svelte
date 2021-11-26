@@ -1,4 +1,3 @@
-<header>
 <form class="w-full max-w-sm p-4 space-x-1 space-y-3">    
     <img 
         src="https://www.burobrasil.com/blades-in-the-dark-srd/wp-content/uploads/2018/03/Blades-marca_preview-2.png" 
@@ -15,10 +14,9 @@
 
 <style>
     label {
-        @apply block tracking-wide text-gray-700 text-xs font-bold mb-2
+        @apply block tracking-wide text-gray-700 text-xs font-bold mb-2;
     }
     input {
-        @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500
+        @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight;
     }    
 </style>
-</header>
